@@ -11,7 +11,6 @@ EXPOSE 8118 9050 9100
 ADD ./conf/privoxy/config /etc/privoxy/config
 ADD ./conf/tor/torrc /etc/tor/torrc
 ADD ./conf/supervisor.conf.d/ /etc/supervisor/conf.d/
-ADD assets /opt/gr3yw0lf
 
 VOLUME [ "/etc/privoxy", "/etc/tor" ]
 
