@@ -1,7 +1,9 @@
 FROM phusion/baseimage:0.9.15
 MAINTAINER Spencer Herzberg <spencer.herzberg@gmail.com>
 
+RUN echo "0.11" >/etc/version
 RUN apt-get update \
+    && apt-get upgrade -y \
     && apt-get install privoxy wget tor supervisor -y
 
 # Ports
